@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* // Add this style to your css file */
+.sticky-nav {
+     animation: sticky-nav 300ms;
+}
+    
+@keyframes sticky-nav {
+    0% {
+        transform: translateY(-6em)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+@keyframes slide-left-to-right {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .slide-enter {
+    animation: slide-left-to-right 1s forwards;
+  }
+ 
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .marquee {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: marquee 5s linear infinite;
+  }
+
+  .break-words {
+    word-break: break-word;
+  }
+  
+  .whitespace-normal {
+    white-space: normal;
+  }
+  
+ 
